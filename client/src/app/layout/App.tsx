@@ -5,6 +5,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container'
 import { ThemeProvider, createTheme} from '@mui/material/styles'
 
+import { Outlet } from 'react-router-dom' 
+
 import { useState } from 'react'
 
 function App() {
@@ -30,7 +32,7 @@ function App() {
       <Header darkMode={darkMode} handleThemeChange={handleThemeChange}/>
 
       <Container maxWidth="lg">        
-        <Catalog/>
+        <Outlet />
       </Container>
       
     </ThemeProvider>
