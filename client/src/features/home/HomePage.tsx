@@ -7,27 +7,6 @@ export default function HomePage() {
         <Typography variant="h1" color="initial">
             Home page
         </Typography>
-        <Typography variant="h1" color="initial">
-            Home page
-        </Typography>
-        <Typography variant="h1" color="initial">
-            Home page
-        </Typography>
-        <Typography variant="h1" color="initial">
-            Home page
-        </Typography>
-        <Typography variant="h1" color="initial">
-            Home page
-        </Typography>
-        <Typography variant="h1" color="initial">
-            Home page
-        </Typography>
-        <Typography variant="h1" color="initial">
-            Home page
-        </Typography>
-        <Typography variant="h1" color="initial">
-            Home page
-        </Typography>
         </>
     )
 }
