@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace API.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class OrderEntityAdded : Migration
+    public partial class OrderEntityModified : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -249,6 +249,8 @@ namespace API.Data.Migrations
                     ItemOrdered_ProductId = table.Column<int>(type: "INTEGER", nullable: true),
                     ItemOrdered_Name = table.Column<string>(type: "TEXT", nullable: true),
                     ItemOrdered_PictureUrl = table.Column<string>(type: "TEXT", nullable: true),
+                    ItemOrdered_Brand = table.Column<string>(type: "TEXT", nullable: true),
+                    ItemOrdered_Type = table.Column<string>(type: "TEXT", nullable: true),
                     Price = table.Column<long>(type: "INTEGER", nullable: false),
                     Quantity = table.Column<int>(type: "INTEGER", nullable: false),
                     OrderId = table.Column<int>(type: "INTEGER", nullable: true)

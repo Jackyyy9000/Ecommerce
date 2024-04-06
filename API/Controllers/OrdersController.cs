@@ -54,7 +54,9 @@ public class OrdersController : BaseApiController
             {
                 ProductId = productItem.Id,
                 Name = productItem.Name,
-                PictureUrl = productItem.PictureUrl
+                PictureUrl = productItem.PictureUrl,
+                Brand = productItem.Brand,
+                Type = productItem.Type
             };
             var orderItem = new OrderItem 
             {

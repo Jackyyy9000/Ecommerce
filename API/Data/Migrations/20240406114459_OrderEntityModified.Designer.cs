@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20240403103113_OrderEntityAdded")]
-    partial class OrderEntityAdded
+    [Migration("20240406114459_OrderEntityModified")]
+    partial class OrderEntityModified
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -444,6 +444,9 @@ namespace API.Data.Migrations
                             b1.Property<int>("OrderItemId")
                                 .HasColumnType("INTEGER");
 
+                            b1.Property<string>("Brand")
+                                .HasColumnType("TEXT");
+
                             b1.Property<string>("Name")
                                 .HasColumnType("TEXT");
 
@@ -452,6 +455,9 @@ namespace API.Data.Migrations
 
                             b1.Property<int>("ProductId")
                                 .HasColumnType("INTEGER");
+
+                            b1.Property<string>("Type")
+                                .HasColumnType("TEXT");
 
                             b1.HasKey("OrderItemId");
 

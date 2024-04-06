@@ -27,6 +27,8 @@ public static class OrderExtensions
                     Name = item.ItemOrdered.Name,
                     PictureUrl = item.ItemOrdered.PictureUrl,
                     Price = item.Price,
+                    Brand = item.ItemOrdered.Brand,
+                    Type = item.ItemOrdered.Type,
                     Quantity = item.Quantity
                 }).ToList()
             }).AsNoTracking();

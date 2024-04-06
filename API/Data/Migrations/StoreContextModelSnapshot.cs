@@ -441,6 +441,9 @@ namespace API.Data.Migrations
                             b1.Property<int>("OrderItemId")
                                 .HasColumnType("INTEGER");
 
+                            b1.Property<string>("Brand")
+                                .HasColumnType("TEXT");
+
                             b1.Property<string>("Name")
                                 .HasColumnType("TEXT");
 
@@ -449,6 +452,9 @@ namespace API.Data.Migrations
 
                             b1.Property<int>("ProductId")
                                 .HasColumnType("INTEGER");
+
+                            b1.Property<string>("Type")
+                                .HasColumnType("TEXT");
 
                             b1.HasKey("OrderItemId");
 
